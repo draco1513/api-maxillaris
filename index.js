@@ -16,11 +16,10 @@ app.get('/', (request, response) => {
 })
 
 app.get('/persona', db.getPersona)
-//app.get('/users/:id', db.getUserById)
+
 app.post('/persona', db.createPersona)
-//app.put('/users/:id', db.updateUser)
-//app.delete('/users/:id', db.deleteUser)
+
 
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
-})//
+})
